@@ -73,3 +73,28 @@ body, html {
 .landing-text p {
   font-size: 24px;
 }
+
+@media(max-width: 820px) {
+  .landing-text a {
+    border: none;
+    font-size: 14px;
+  }
+
+  .landing-text span {
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 400px) {
+  .landing-text span {
+    font-size: 30px;
+  }
+
+  .landing {
+    margin-top: -20px;
+  }
+
+  .landing-text p {
+    display: none;
+  }
+}
