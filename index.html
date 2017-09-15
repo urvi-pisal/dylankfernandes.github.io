@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
     <title>Dylan Fernandes</title>
 </head>
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
+        <a href="../index.html">Home</a>
+        <a href="">Portfolio</a>
         <a href="#">Contact</a>
-        <a href="#" id = "last">About</a>
+        <a href="./pages/about.html" id = "last">About</a>
         <a href="javascript:void(0);" class="icon" onclick="navbar()">&#9776;</a>
     </div>
     <div class = "landing overlay">
@@ -25,15 +26,47 @@
             <a href="#">Services</a>
         </div>
     </div>
-    <script>
-        function navbar() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <div class="pg aboutme">
+        <center>
+            <h1>Who Am I?</h1>
+            <p>
+                Full Stack Web Developer. Lover of JavaScript.
+                Computer Science and Machine Learning Enthusiast.
+                High School Senior.
+            </p>
+        </center>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="block">
+                    <p>
+                        Just your every day high school senior with dreams to
+                        start his own web design company in college and work
+                        for a top software company straight after.
+                    </p>
+                    <p>
+                        My ideal career would be in machine learning, building
+                        out systems that involve natural language processing
+                        and image processing and using those functions 
+                        to improve how a business runs.
+                    </p>
+                    <p>
+                        I spend my days working on schoolwork, applying to college, 
+                        working for clients, building apps for fun, or just 
+                        hanging out with friends.
+                    </p>
+                    <p>
+                        I run also run a blog about my experiences in programming
+                        so I can share my unique experience with the world.
+                        Check me out on <a href="https://medium.com/@dylan.fernandes00">Medium</a>
+                        to find out more.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/backgroundoffice.jpeg" alt="" id = "aboutme-img">
+            </div>
+        </div>
+    </div>
+    <script src = "./code/navbar.js"></script>
 </body>
 </html>
